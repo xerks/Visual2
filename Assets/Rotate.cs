@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
-  [SerializeField] private float rotSpeed = 20;
+    public float rotSpeed = 30f;
 
-  [SerializeField] private Transform target;
+    void OnMouseDrag()
+    {
+        float rotX = Input.GetAxis("Mouse X") * rotSpeed;
+        float rotY = Input.GetAxis("Mouse Y") * rotSpeed;
 
-  void OnMouseDrag()
-  {
-    //float rotX = Input.GetAxis("Mouse X")*rotSpeed*Mathf.Deg2Rad;
-    float rotY = Input.GetAxis("Mouse Y")*rotSpeed*Mathf.Deg2Rad;
+        Camera camera = Camera.main;
 
-    //transform.RotateAround(Vector3.up, -rotX);
-    transform.RotateAround(Vector3.right, rotY);
-  }
+        Vector3 right = Vector3.Cross(camera.transform.up, transform.position - camera.transform.position);
+        Vector3 up = Vector3.Cross(transform.position - camera.transform.position, right);
+
+        transform.rotation = Quaternion.AngleAxis(-rotX, up) * transform.rotation;
+        transform.rotation = Quaternion.AngleAxis(rotY, right) * transform.rotation;
+    }
 }
