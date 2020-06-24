@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="Hirn" size="0.200000 0.188325" />
+    <ImageTarget name="Luftroehre_schlecht" size="0.300000 0.225000" />
     <ImageTarget name="Niere_digital" size="0.200000 0.237771" />
     <ImageTarget name="Rumpf_Buch" size="0.300000 0.400000" />
     <ImageTarget name="Niere_Buch" size="0.200000 0.266667" />
