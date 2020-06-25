@@ -5,6 +5,7 @@ public class Rotate : MonoBehaviour
     public float rotSpeed = 30f;
     public bool rotatX = true;
     public bool rotatY = true;
+    public bool Lung = false;
 
     void OnMouseDrag()
     {
@@ -18,6 +19,10 @@ public class Rotate : MonoBehaviour
         if (rotatX)
         {
             transform.rotation *= Quaternion.AngleAxis(rotY, Vector3.right);
+        }
+        if (Lung)
+        {
+          transform.rotation *= Quaternion.AngleAxis(rotY, Vector3.forward);
         }
     }
 }

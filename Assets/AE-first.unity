@@ -417,6 +417,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 0
+  Lung: 0
 --- !u!65 &227478559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -891,6 +892,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 1
+  Lung: 0
 --- !u!65 &315662172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -925,6 +927,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 1
+  Lung: 0
 --- !u!65 &389297354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1086,6 +1089,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 1
+  Lung: 0
 --- !u!65 &447786387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2051,6 +2055,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 0
+  Lung: 0
 --- !u!21 &928812817
 Material:
   serializedVersion: 6
@@ -2301,6 +2306,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 0
+  Lung: 0
 --- !u!65 &1065524413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2873,8 +2879,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpeed: 5
-  rotatX: 1
+  rotatX: 0
   rotatY: 0
+  Lung: 1
 --- !u!43 &1392079834
 Mesh:
   m_ObjectHideFlags: 0
@@ -4368,6 +4375,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 0
   rotatY: 1
+  Lung: 0
 --- !u!1 &2021611766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,6 +4652,7 @@ MonoBehaviour:
   rotSpeed: 5
   rotatX: 1
   rotatY: 1
+  Lung: 0
 --- !u!65 &2028157455
 BoxCollider:
   m_ObjectHideFlags: 0
